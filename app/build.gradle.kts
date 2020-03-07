@@ -6,15 +6,15 @@ plugins {
 }
 
 android {
-    compileSdkVersion(Apps.compileSdk)
-    buildToolsVersion("29.0.2")
+    compileSdkVersion(Apps.Sdk.compile)
+    buildToolsVersion(Apps.Misc.buildTools)
 
     defaultConfig {
-        applicationId = "com.efedaniel.animationsdemo"
-        minSdkVersion(Apps.minSdk)
-        targetSdkVersion(Apps.targetSdk)
-        versionCode = Apps.versionCode
-        versionName = Apps.versionName
+        applicationId = Apps.Misc.applicationID
+        minSdkVersion(Apps.Sdk.min)
+        targetSdkVersion(Apps.Sdk.target)
+        versionCode = Apps.Version.code
+        versionName = Apps.Version.name
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
