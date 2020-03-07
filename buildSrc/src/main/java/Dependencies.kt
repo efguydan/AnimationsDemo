@@ -23,6 +23,7 @@ object Versions {
         const val appCompat = "1.1.0"
         const val androidxCore = "1.2.0"
         const val constraintLayout = "1.1.3"
+        const val navigation = "2.3.0-alpha03"
     }
 
     object Test {
@@ -35,11 +36,19 @@ object Versions {
     }
 }
 
+object ProjectDependencies {
+    const val buildTools = "com.android.tools.build:gradle:${Versions.Libs.gradle}"
+    const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.Libs.kotlin}"
+    const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.Libs.navigation}"
+}
+
 object Libs {
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.Libs.kotlin}"
     const val appCompat = "androidx.appcompat:appcompat:${Versions.Libs.appCompat}"
     const val androidxCore = "androidx.core:core-ktx:${Versions.Libs.androidxCore}"
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.Libs.constraintLayout}"
+    const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.Libs.navigation}"
+    const val navigationUI = "androidx.navigation:navigation-ui-ktx:${Versions.Libs.navigation}"
 }
 
 object TestLibs {
