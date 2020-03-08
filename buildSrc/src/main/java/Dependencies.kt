@@ -20,10 +20,12 @@ object Versions {
     object Libs {
         const val gradle = "3.6.1"
         const val kotlin = "1.3.70"
+        const val legacySupport = "1.0.0"
         const val appCompat = "1.1.0"
         const val androidxCore = "1.2.0"
         const val constraintLayout = "1.1.3"
         const val navigation = "2.3.0-alpha03"
+        const val materialLibrary = "1.1.0"
     }
 
     object Test {
@@ -44,11 +46,13 @@ object ProjectDependencies {
 
 object Libs {
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.Libs.kotlin}"
+    const val legacySupport = "androidx.legacy:legacy-support-v4:${Versions.Libs.legacySupport}"
     const val appCompat = "androidx.appcompat:appcompat:${Versions.Libs.appCompat}"
     const val androidxCore = "androidx.core:core-ktx:${Versions.Libs.androidxCore}"
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.Libs.constraintLayout}"
     const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.Libs.navigation}"
     const val navigationUI = "androidx.navigation:navigation-ui-ktx:${Versions.Libs.navigation}"
+    const val materialLibrary = "com.google.android.material:material:${Versions.Libs.materialLibrary}"
 }
 
 object TestLibs {
