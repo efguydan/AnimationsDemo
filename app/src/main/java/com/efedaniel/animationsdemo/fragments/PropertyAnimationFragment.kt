@@ -7,9 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.efedaniel.animationsdemo.R
+import com.efedaniel.animationsdemo.base.BaseFragment
 import com.efedaniel.animationsdemo.databinding.FragmentPropertyAnimationBinding
 
-class PropertyAnimationFragment : Fragment() {
+class PropertyAnimationFragment : BaseFragment() {
 
     private lateinit var binding: FragmentPropertyAnimationBinding
 
@@ -24,5 +25,6 @@ class PropertyAnimationFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setupToolbar(getString(R.string.property_animation))
     }
 }

@@ -21,7 +21,7 @@
         android:ellipsize="end"
         android:fontFamily="@font/muli_bold"
         android:maxLines="1"
-        android:paddingStart="16dp"
+        android:paddingStart="60dp"
         android:paddingTop="2dp"
         android:paddingEnd="16dp"
         android:paddingBottom="2dp"
