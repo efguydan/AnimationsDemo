@@ -24,4 +24,8 @@
         android:id="@+id/dashboard6"
         android:icon="@drawable/ic_hamburger"
         android:title="@string/property_animation"/>
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings"/>
 </menu>

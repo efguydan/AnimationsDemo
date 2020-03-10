@@ -48,6 +48,7 @@ object Libs {
     const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.Libs.kotlin}"
     const val legacySupport = "androidx.legacy:legacy-support-v4:${Versions.Libs.legacySupport}"
     const val appCompat = "androidx.appcompat:appcompat:${Versions.Libs.appCompat}"
+    const val preferences = "androidx.preference:preference:${Versions.Libs.appCompat}"
     const val androidxCore = "androidx.core:core-ktx:${Versions.Libs.androidxCore}"
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.Libs.constraintLayout}"
     const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.Libs.navigation}"

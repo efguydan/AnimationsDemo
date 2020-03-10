@@ -1,6 +1,7 @@
 package com.efedaniel.animationsdemo
 
 import android.os.Bundle
+import androidx.annotation.DrawableRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.databinding.DataBindingUtil
@@ -54,8 +55,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun setupToolbar(toolbarTitle: String) = supportActionBar!!.run {
+    fun setupToolbar(
+        toolbarTitle: String,
+        @DrawableRes upIconRes: Int = R.drawable.ic_hamburger
+    ) = supportActionBar!!.run {
         binding.toolbarLayout.toolbarTitleTextView.text = toolbarTitle
+        supportActionBar!!.setHomeAsUpIndicator(upIconRes)
     }
 
     override fun onSupportNavigateUp(): Boolean {

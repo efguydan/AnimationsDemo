@@ -11,5 +11,9 @@
         android:name="com.efedaniel.animationsdemo.fragments.PropertyAnimationFragment"
         android:label="PropertyAnimationFragment"
         tools:layout="@layout/fragment_property_animation" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.efedaniel.animationsdemo.fragments.SettingsFragment"
+        android:label="SettingsFragment" />
 
 </navigation>

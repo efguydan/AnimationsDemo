@@ -63,6 +63,7 @@ dependencies {
     implementation(Libs.navigationFragment)
     implementation(Libs.navigationUI)
     implementation(Libs.materialLibrary)
+    implementation(Libs.preferences)
 
     testImplementation(TestLibs.jUnit)
 

@@ -1,7 +1,9 @@
 package com.efedaniel.animationsdemo.base
 
+import androidx.annotation.DrawableRes
 import androidx.fragment.app.Fragment
 import com.efedaniel.animationsdemo.MainActivity
+import com.efedaniel.animationsdemo.R
 
 abstract class BaseFragment: Fragment() {
 
@@ -15,7 +17,9 @@ abstract class BaseFragment: Fragment() {
         mainActivity.setCurrentFragment(this)
     }
 
-    protected fun setupToolbar(title: String) = mainActivity.setupToolbar(title)
+    protected fun setupToolbar(
+        title: String, @DrawableRes upIconRes: Int = R.drawable.ic_hamburger
+    ) = mainActivity.setupToolbar(title, upIconRes)
 
     fun onBackPressed(): Boolean = false
 
