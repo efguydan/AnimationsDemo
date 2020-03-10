@@ -29,6 +29,6 @@
         android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:fontFamily="@font/muli_bold"
-        tools:text="Blood Finder" />
+        tools:text="@string/property_animation" />
 
 </FrameLayout>

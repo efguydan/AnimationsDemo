@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.databinding.DataBindingUtil
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -39,7 +40,18 @@ class MainActivity : AppCompatActivity() {
             setHomeAsUpIndicator(R.drawable.ic_hamburger)
         }
         navController = findNavController(R.id.nav_host_fragment)
-        appBarConfiguration = AppBarConfiguration(topLevelDestinations)
+        appBarConfiguration = AppBarConfiguration(topLevelDestinations, binding.drawerLayout)
+        setupNavBar()
+    }
+
+    private fun setupNavBar() {
+        NavigationUI.setupWithNavController(binding.navigationView, navController)
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            binding.drawerLayout.setDrawerLockMode(
+                if (topLevelDestinations.contains(destination.id)) DrawerLayout.LOCK_MODE_UNLOCKED
+                else DrawerLayout.LOCK_MODE_LOCKED_CLOSED
+            )
+        }
     }
 
     fun setupToolbar(toolbarTitle: String) = supportActionBar!!.run {
