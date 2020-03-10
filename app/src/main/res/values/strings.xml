@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">AnimationsDemo</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="property_animation">Property Animation</string>
     <string name="in_progress_check_back_shortly">In Progress, Check Back Shortly</string>
     <string name="settings">Settings</string>
+    <string-array name="ui_modes_entries">
+        <item>Light Theme</item>
+        <item>Dark Theme</item>
+        <item>Follow System</item>
+        <item>Set by Battery Saver</item>
+    </string-array>
 </resources>

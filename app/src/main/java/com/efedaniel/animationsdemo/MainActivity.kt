@@ -27,9 +27,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         setupNavigation()
-
-        //Currently Dark Mode only
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
     }
 
     private fun setupNavigation() {
@@ -74,4 +71,13 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
         if (!currentFragment.onBackPressed()) super.onBackPressed()
     }
+
+    fun setThemeMode(themeMode: String) = AppCompatDelegate.setDefaultNightMode(
+        when(themeMode) {
+            "Light Theme" -> AppCompatDelegate.MODE_NIGHT_NO
+            "Dark Theme" -> AppCompatDelegate.MODE_NIGHT_YES
+            "Follow System" -> AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
+            "Set by Battery Saver" -> AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY
+            else -> AppCompatDelegate.MODE_NIGHT_NO
+        })
 }

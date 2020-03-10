@@ -2,13 +2,13 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <SwitchPreferenceCompat
-        app:key="notifications"
-        app:title="Enable message notifications"/>
-
-    <Preference
-        app:key="feedback"
-        app:title="Send feedback"
-        app:summary="Report technical issues or suggest new features"/>
+    <ListPreference
+        app:key="ui_mode"
+        android:icon="@drawable/ic_theme"
+        app:title="Select Theme"
+        app:summary="Select the style you want you want for the application"
+        app:entries="@array/ui_modes_entries"
+        app:entryValues="@array/ui_modes_entries"
+        android:defaultValue="Light Theme"/>
 
 </PreferenceScreen>
