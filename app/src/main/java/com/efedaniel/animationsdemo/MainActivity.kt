@@ -1,6 +1,7 @@
 package com.efedaniel.animationsdemo
 
 import android.os.Bundle
+import android.util.Log
 import androidx.annotation.DrawableRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -27,9 +28,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        setupNavigation()
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setThemeMode(getPrefsUtils(applicationContext).getString("ui_mode", "Light Theme"))
+        setContentView(binding.root)
+        setupNavigation()
     }
 
     private fun setupNavigation() {
@@ -57,8 +59,7 @@ class MainActivity : AppCompatActivity() {
 
     fun setupToolbar(
         toolbarTitle: String,
-        @DrawableRes upIconRes: Int = R.drawable.ic_hamburger
-    ) = supportActionBar!!.run {
+        @DrawableRes upIconRes: Int = R.drawable.ic_hamburger) = supportActionBar!!.run {
         binding.toolbarLayout.toolbarTitleTextView.text = toolbarTitle
         supportActionBar!!.setHomeAsUpIndicator(upIconRes)
     }

@@ -1,6 +1,7 @@
 package com.efedaniel.animationsdemo.fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.preference.ListPreference
 import androidx.preference.PreferenceFragmentCompat
 import com.efedaniel.animationsdemo.MainActivity
@@ -15,6 +16,10 @@ class SettingsFragment: PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.app_settings, rootKey)
+    }
+
+    override fun onStart() {
+        super.onStart()
         mainActivity.setupToolbar(getString(R.string.settings), R.drawable.ic_arrow_back)
         setupListeners()
     }
