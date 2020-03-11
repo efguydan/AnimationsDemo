@@ -12,6 +12,8 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import com.efedaniel.animationsdemo.base.BaseFragment
 import com.efedaniel.animationsdemo.databinding.ActivityMainBinding
+import com.efedaniel.animationsdemo.utils.PrefsUtils
+import com.efedaniel.animationsdemo.utils.PrefsUtils.Companion.getPrefsUtils
 import kotlinx.android.synthetic.main.toolbar_layout.view.*
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         setupNavigation()
+        setThemeMode(getPrefsUtils(applicationContext).getString("ui_mode", "Light Theme"))
     }
 
     private fun setupNavigation() {
