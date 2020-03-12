@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/alpha"
+        android:title="@string/alpha"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/rotate"
+        android:title="@string/rotate"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/scale"
+        android:title="@string/scale"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/translate"
+        android:title="@string/translate"
+        app:showAsAction="never" />
+</menu>

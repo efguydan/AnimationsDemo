@@ -3,6 +3,10 @@
     <string name="property_animation">Property Animation</string>
     <string name="in_progress_check_back_shortly">In Progress, Check Back Shortly</string>
     <string name="settings">Settings</string>
+    <string name="alpha">Alpha</string>
+    <string name="rotate">Rotate</string>
+    <string name="scale">Scale</string>
+    <string name="translate">Translate</string>
     <string-array name="ui_modes_entries">
         <item>Light Theme</item>
         <item>Dark Theme</item>

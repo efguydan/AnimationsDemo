@@ -6,7 +6,7 @@
         android:propertyName="scaleX"
         android:duration="1000"
         android:valueFrom="1.0"
-        android:valueTo="3.0"
+        android:valueTo="2.0"
         android:valueType="floatType"
         android:repeatMode="reverse"
         android:repeatCount="1" />
@@ -15,7 +15,7 @@
         android:propertyName="scaleY"
         android:duration="1000"
         android:valueFrom="1.0"
-        android:valueTo="3.0"
+        android:valueTo="2.0"
         android:valueType="floatType"
         android:repeatMode="reverse"
         android:repeatCount="1" />
