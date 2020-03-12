@@ -1,5 +1,7 @@
 package com.efedaniel.animationsdemo.fragments
 
+import android.animation.Animator
+import android.animation.AnimatorInflater
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -14,6 +16,7 @@ import com.efedaniel.animationsdemo.databinding.FragmentPropertyAnimationBinding
 class PropertyAnimationFragment : BaseFragment() {
 
     private lateinit var binding: FragmentPropertyAnimationBinding
+    private lateinit var animator: Animator
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,5 +30,12 @@ class PropertyAnimationFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupToolbar(getString(R.string.property_animation))
+
+        //TODO To set up completely later
+        animator = AnimatorInflater.loadAnimator(mainActivity, R.animator.property_alpha)
+        animator.setTarget(binding.targetImage)
+        binding.rootLayout.setOnClickListener {
+            animator.start()
+        }
     }
 }

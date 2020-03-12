@@ -7,7 +7,7 @@ import com.efedaniel.animationsdemo.R
 
 abstract class BaseFragment: Fragment() {
 
-    private val mainActivity: MainActivity
+    protected val mainActivity: MainActivity
         get() {
             return activity as? MainActivity ?: throw IllegalStateException("Not attached!")
         }
