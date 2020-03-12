@@ -32,7 +32,7 @@ class PropertyAnimationFragment : BaseFragment() {
         setupToolbar(getString(R.string.property_animation))
 
         //TODO To set up completely later
-        animator = AnimatorInflater.loadAnimator(mainActivity, R.animator.property_alpha)
+        animator = AnimatorInflater.loadAnimator(mainActivity, R.animator.property_rotate)
         animator.setTarget(binding.targetImage)
         binding.rootLayout.setOnClickListener {
             animator.start()

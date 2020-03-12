@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+
+    <objectAnimator
+        android:propertyName="rotation"
+        android:duration="1000"
+        android:valueFrom="0"
+        android:valueTo="-70"
+        android:valueType="floatType"/>
+
+    <objectAnimator
+        android:propertyName="rotation"
+        android:duration="1600"
+        android:valueFrom="-70"
+        android:valueTo="170"
+        android:valueType="floatType"/>
+
+    <objectAnimator
+        android:propertyName="rotation"
+        android:duration="1000"
+        android:valueFrom="170"
+        android:valueTo="0"
+        android:valueType="floatType"/>
+
+</set>
