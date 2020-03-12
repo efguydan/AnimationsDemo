@@ -22,5 +22,4 @@ abstract class BaseFragment: Fragment() {
     ) = mainActivity.setupToolbar(title, upIconRes)
 
     fun onBackPressed(): Boolean = false
-
 }
