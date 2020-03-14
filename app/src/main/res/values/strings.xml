@@ -7,10 +7,5 @@
     <string name="rotate">Rotate</string>
     <string name="scale">Scale</string>
     <string name="translate">Translate</string>
-    <string-array name="ui_modes_entries">
-        <item>Light Theme</item>
-        <item>Dark Theme</item>
-        <item>Follow System</item>
-        <item>Set by Battery Saver</item>
-    </string-array>
+    <string name="simple_animation">Simple Animation</string>
 </resources>

@@ -15,8 +15,13 @@ import com.efedaniel.animationsdemo.databinding.FragmentPropertyAnimationBinding
 
 class PropertyAnimationFragment : BaseFragment() {
 
+    enum class AnimationType {
+        SIMPLE,
+    }
+
     private lateinit var binding: FragmentPropertyAnimationBinding
     private lateinit var animator: Animator
+    private var animationType = AnimationType.SIMPLE
 
     @AnimatorRes private var animatorRes: Int = R.animator.property_alpha
 
