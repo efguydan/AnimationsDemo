@@ -8,4 +8,6 @@
     <string name="scale">Scale</string>
     <string name="translate">Translate</string>
     <string name="simple_animation">Simple Animation</string>
+    <string name="animation_set">Animation Set</string>
+    <string name="flip_and_switch">Flip and Switch</string>
 </resources>

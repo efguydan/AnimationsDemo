@@ -3,11 +3,8 @@ package com.efedaniel.animationsdemo.fragments
 import android.animation.Animator
 import android.animation.AnimatorInflater
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import androidx.annotation.AnimatorRes
-import androidx.annotation.DrawableRes
-import androidx.fragment.app.Fragment
 
 import com.efedaniel.animationsdemo.R
 import com.efedaniel.animationsdemo.base.BaseFragment
@@ -15,15 +12,10 @@ import com.efedaniel.animationsdemo.databinding.FragmentPropertyAnimationBinding
 
 class PropertyAnimationFragment : BaseFragment() {
 
-    enum class AnimationType {
-        SIMPLE,
-    }
-
     private lateinit var binding: FragmentPropertyAnimationBinding
     private lateinit var animator: Animator
-    private var animationType = AnimationType.SIMPLE
 
-    @AnimatorRes private var animatorRes: Int = R.animator.property_alpha
+    @AnimatorRes private var animatorRes: Int = R.animator.property_simple_alpha
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -54,19 +46,23 @@ class PropertyAnimationFragment : BaseFragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when(item.itemId) {
             R.id.alpha -> {
-                animatorRes = R.animator.property_alpha
+                animatorRes = R.animator.property_simple_alpha
                 true
             }
             R.id.rotate -> {
-                animatorRes = R.animator.property_rotate
+                animatorRes = R.animator.property_simple_rotate
                 true
             }
             R.id.scale -> {
-                animatorRes = R.animator.property_scale
+                animatorRes = R.animator.property_simple_scale
                 true
             }
             R.id.translate -> {
-                animatorRes = R.animator.property_translate
+                animatorRes = R.animator.property_simple_translate
+                true
+            }
+            R.id.flip_and_switch -> {
+                animatorRes = R.animator.property_set_flip_and_scale
                 true
             }
             else -> false

@@ -45,7 +45,7 @@ object ProjectDependencies {
 }
 
 object Libs {
-    const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.Libs.kotlin}"
+    const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.Libs.kotlin}"
     const val legacySupport = "androidx.legacy:legacy-support-v4:${Versions.Libs.legacySupport}"
     const val appCompat = "androidx.appcompat:appcompat:${Versions.Libs.appCompat}"
     const val preferences = "androidx.preference:preference:${Versions.Libs.appCompat}"

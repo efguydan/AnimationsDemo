@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupNavigation() {
-        //toolbar.overflowIcon = getDrawable()
+        binding.toolbarLayout.toolbar.overflowIcon = getDrawable(R.drawable.ic_overflow)
         setSupportActionBar(binding.toolbarLayout.toolbar)
         supportActionBar!!.run {
             setDisplayHomeAsUpEnabled(true)
