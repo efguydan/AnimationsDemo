@@ -10,9 +10,9 @@
             android:icon="@drawable/ic_hamburger"
             android:title="@string/interpolation"/>
         <item
-            android:id="@+id/dashboard3"
+            android:id="@+id/drawableAnimationFragment"
             android:icon="@drawable/ic_hamburger"
-            android:title="@string/property_animation"/>
+            android:title="@string/drawable_animation"/>
         <item
             android:id="@+id/dashboard4"
             android:icon="@drawable/ic_hamburger"
