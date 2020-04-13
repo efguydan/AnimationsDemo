@@ -65,6 +65,10 @@ class PropertyAnimationFragment : BaseFragment() {
                 animatorRes = R.animator.property_set_flip_and_scale
                 true
             }
+            R.id.spin_and_fade -> {
+                animatorRes = R.animator.property_set_spin_and_fade
+                true
+            }
             else -> false
         }
     }

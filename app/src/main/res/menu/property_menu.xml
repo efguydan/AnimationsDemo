@@ -31,6 +31,10 @@
                 android:id="@+id/flip_and_switch"
                 android:title="@string/flip_and_switch"
                 app:showAsAction="never" />
+            <item
+                android:id="@+id/spin_and_fade"
+                android:title="@string/spin_and_fade"
+                app:showAsAction="never" />
         </menu>
     </item>
 </menu>
