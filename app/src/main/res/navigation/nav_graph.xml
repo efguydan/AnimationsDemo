@@ -12,6 +12,11 @@
         android:label="PropertyAnimationFragment"
         tools:layout="@layout/fragment_property_animation" />
     <fragment
+        android:id="@+id/interpolatorFragment"
+        android:name="com.efedaniel.animationsdemo.fragments.InterpolatorFragment"
+        android:label="fragment_interpolator"
+        tools:layout="@layout/fragment_interpolator" />
+    <fragment
         android:id="@+id/settingsFragment"
         android:name="com.efedaniel.animationsdemo.fragments.SettingsFragment"
         android:label="SettingsFragment" />

@@ -11,4 +11,6 @@
     <string name="animation_set">Animation Set</string>
     <string name="flip_and_switch">Flip and Switch</string>
     <string name="spin_and_fade">Spin and Fade</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="interpolation">"Interpolation"</string>
 </resources>

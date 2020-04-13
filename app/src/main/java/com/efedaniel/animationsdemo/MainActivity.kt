@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var currentFragment: BaseFragment
 
-    private var topLevelDestinations = setOf(R.id.propertyAnimationFragment)
+    private var topLevelDestinations = setOf(R.id.propertyAnimationFragment, R.id.interpolatorFragment)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

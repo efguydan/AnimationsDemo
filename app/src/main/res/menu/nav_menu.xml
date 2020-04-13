@@ -3,12 +3,12 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/propertyAnimationFragment"
-            android:icon="@drawable/ic_hamburger"
+            android:icon="@drawable/ic_steering_wheel"
             android:title="@string/property_animation"/>
         <item
-            android:id="@+id/dashboard2"
+            android:id="@+id/interpolatorFragment"
             android:icon="@drawable/ic_hamburger"
-            android:title="@string/property_animation"/>
+            android:title="@string/interpolation"/>
         <item
             android:id="@+id/dashboard3"
             android:icon="@drawable/ic_hamburger"
